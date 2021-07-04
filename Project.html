@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Bupr-Suite~</title>
+    <style>
+        div em:hover {
+            font-size:38px;
+            }
+        .Image:hover {
+            width: 900px;
+            height: 800px;
+        }    
+    </style>
+    
+</head>
+<body style="background-color: rgb(105, 99, 99);">
+  
+    <h1 style="font-size: 50px; 
+               background-color: rgba(128, 128, 128, 0.76); 
+               height: 55px;
+               border: 2px solid black;
+               padding-left: 555px;
+               border-radius: 50px;" >Burp-Suite </h1>
+               <hr>
+     <h3 style="font-size: 40px;">* <a href="https://www.geeksforgeeks.org/what-is-burp-suite/" style="color: black;">BurpSuite</a>:</h3>
+     <h3 style="border: 0.1px solid black; border-radius: 10px;"><em>Burp or Burp Suite is a set of tools used for penetration testing of web applications. It is developed by the company named Portswigger, which is also the alias of its founder Dafydd Stuttard. BurpSuite aims to be an all in one set of tools and its capabilities can be enhanced by installing add-ons that are called BApps.
+        It is the most popular tool among professional web app security researchers and bug bounty hunters. Its ease of use makes it a more suitable choice over free alternatives like OWASP ZAP. Burp Suite is available as a community edition which is free, professional edition that costs $399/year and an enterprise edition that costs $3999/Year. This article gives a brief introduction to the tools offered by BurpSuite. If you are a complete beginner in Web Application Pentest/Web App Hacking/Bug Bounty, we would recommend you to just read through without thinking too much about a term.
+        </em></h3>
+        <h3><em><pre>The tools offered by BurpSuite are:
+            1.Spider(Target)
+            2.proxy
+            3.Intruder
+            4.Repeter
+            5.Sequencer
+            6.Decoder
+            7.Extender
+            8.Scanner
+        </pre></em></h3>
+        <div>
+        <h3 style="font-size: 30px; ">1.<em> Spider(Target):</em></h3></div>
+        <h3 style="border: 0.1px solid black; border-radius: 10px;"><em> <pre>Used for creating map of the target web application. Means:
+            If I run a web application trough <q>Burp-suite</q> it will create a maps of target(Which we want to speayfy and as many target of end point I have,
+            that's the things we get from spider.)
+        </pre></em></h3>
+            <div>
+                <img src="1.png" alt=spider(Target) title="Image~Spider(Target)" class="Image" style="width: 500px; height: 400px;border: 3px solid black; border-radius: 10px; " >
+            </div>
+            <div>
+            <h3 style="font-size: 30px; ">2.<em> proxy:</em></h3></div>
+            <h3 style="border: 0.1px solid black; border-radius: 10px;"><em> <pre>There are some requerments:
+                1.community version{
+                    *You can't do whatever you want.
+                    
+                } 
+                2.Pro version{
+                    *you can do whatever you want.
+                    *if you want to go through "HTTPS://" you need CA certificate
+                }
+        Every website has it's own proxy. Burp-Suite also has it's proxy{
+                defalt ip and port:
+                *127.0.0.1(ip)
+                *8080(port)
+                }
+        Firefox is a best website to continue with this. If you download "<a href="https://addons.mozilla.org/bn/firefox/addon/foxyproxy-standard/" style="color: black;">foxyproxy</a>" and set the Burp-suite proxy in the foxyproxy you can see the request and
+        responds going through the web application.</pre></em></h3>
+        <div>
+            <img src="2.png" alt=spider(Target) title="Image~Proxy" class="Image" style="width: 500px; height: 400px;border: 3px solid black; border-radius: 10px; " >
+        </div>
+        <div>
+            <h3 style="font-size: 30px; ">3.<em> Intruder</em>:</h3></div>
+            <h3 style="border: 0.1px solid black; border-radius: 10px;"><em> <pre>It runs through values Ex:{
+                *SQL
+                *xss
+                *dictionary attack
+                *rainbow attack
+                *etc.}.
+        It also supports brute force-attack and single values. 
+        <table>
+            <li>Brute force attacks on password froms,pin froms and other such froms.</li>
+            <li>Dictionary attack on password froms, fils the area suspected og being vulnerable to XSS and SQL Injection.</li>
+            <li>Testing and attacking rate limited on the web app.</li>
+        </table> </pre></em></h3>
+        <div>
+            <img src="3.png" alt=spider(Target) title="Image~Intruder" class="Image" style="width: 500px; height: 400px;border: 3px solid black; border-radius: 10px; " >
+        </div>
+
+        <div>
+            <h3 style="font-size: 30px; ">4.<em>Repeter </em>:</h3></div>
+            <h3 style="border: 0.1px solid black; border-radius: 10px;"><em> <pre>It's basically a manual section where you can check the request and respond of a web application and so on and modify it of your own the check the results. </pre></em></h3>
+            <div>
+                <img src="4.png" alt=spider(Target) title="Image~Intruder" class="Image" style="width: 500px; height: 400px;border: 3px solid black; border-radius: 10px; " >
+            </div>
+
+            <div>
+                <h3 style="font-size: 30px; ">5.<em>Sequencer </em>:</h3></div>
+                <h3 style="border: 0.1px solid black; border-radius: 10px;"><em> <pre>Sequencer is an entropy chacker. Which check the activities of web server. It's checks tokens. Ex:{
+                    *cookies
+                    *anti-CSRF}
+            Cookies & anti-CSRF gather information about web server. So if we check the tokens we can gater the that informations. </pre></em></h3>
+
+            <div>
+                <img src="5.png" alt=spider(Target) title="Image~Sequencer" class="Image" style="width: 500px; height: 400px;border: 3px solid black; border-radius: 10px; " >
+            </div>
+            <div>
+                <h3 style="font-size: 30px; ">6.<em>Decoder </em>:</h3></div>
+                <h3 style="border: 0.1px solid black; border-radius: 10px;"><em> <pre>Decoder is a decode engine. which can decode link URL, HTML, Base64, Hex, etc. If have know about (<a href="https://portswigger.net/web-security/access-control/idor" style="color: black;">IDOR</a>) </pre></em></h3>
+
+                <div>
+                    <img src="6.png" alt=spider(Target) title="Image~Decoder" class="Image" style="width: 500px; height: 400px;border: 3px solid black; border-radius: 10px; " >
+                </div>
+
+</body>
+</html>
